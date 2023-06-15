@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 import 'package:sample_route_manage/src/pages/normal/first.dart';
+import 'package:sample_route_manage/src/pages/stateManage/simple_state_manage_page.dart';
 
 class Home extends StatelessWidget {
   const Home({super.key});
@@ -76,6 +77,12 @@ class Home extends StatelessWidget {
                   );
                 },
                 child: const Text('동적 url 전달'),
+              ),
+              ElevatedButton(
+                onPressed: () {
+                  Get.to(const SimpleStateManagePage());
+                },
+                child: const Text('단순 상태 관리'),
               ),
             ],
           ),
